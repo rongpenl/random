@@ -172,516 +172,528 @@
     <h1>Fun of Thinking: Pascal's Triangle Take-home Project</h1>
 
     <div class="opening">
-        <div class="problem">
-            <h2> Page 1: Unnamed Problem</h2>
-            <p>
-            </p>
-            <div style="display: flex; justify-content: center; margin: 20px 0;">
-                <svg width="420" height="390" xmlns="http://www.w3.org/2000/svg" style="font-family: sans-serif;">
+        <p>
+            This project is supposed to be a fun and interesting way to explore the connections between different mathematical entities.  
+        </p>
+        <p>
+            Here is how to use this document: read each page one by one. Do not preceed to the next page unless you need a hint.
+        </p>
+    </div>
+    <div class="problem">
+        <h2> Page 1: Unnamed Problem</h2>
+        <p>
+            A mysterious wizard gave you this piece of paper. It contains a triangle of numbers and a few lines.
+        </p>
+        <p>
+            Your task: Try to figure out what message the wizard is trying to convey.
+        </p>
+        <div style="display: flex; justify-content: center; margin: 20px 0;">
+            <svg width="420" height="390" xmlns="http://www.w3.org/2000/svg" style="font-family: sans-serif;">
 
-                    <!-- 白底正方形和数字 -->
-                    <!-- Row 0 -->
-                    <rect x="0" y="0" width="40" height="40" fill="white" stroke="black" />
-                    <text x="20" y="25" text-anchor="middle" font-size="16">1</text>
+                <!-- 白底正方形和数字 -->
+                <!-- Row 0 -->
+                <rect x="0" y="0" width="40" height="40" fill="white" stroke="black" />
+                <text x="20" y="25" text-anchor="middle" font-size="16">1</text>
 
-                    <!-- Row 1 -->
-                    <rect x="0" y="50" width="40" height="40" fill="white" stroke="black" />
-                    <rect x="50" y="50" width="40" height="40" fill="white" stroke="black" />
-                    <text x="20" y="75" text-anchor="middle" font-size="16">1</text>
-                    <text x="70" y="75" text-anchor="middle" font-size="16">1</text>
+                <!-- Row 1 -->
+                <rect x="0" y="50" width="40" height="40" fill="white" stroke="black" />
+                <rect x="50" y="50" width="40" height="40" fill="white" stroke="black" />
+                <text x="20" y="75" text-anchor="middle" font-size="16">1</text>
+                <text x="70" y="75" text-anchor="middle" font-size="16">1</text>
 
-                    <!-- Row 2 -->
-                    <rect x="0" y="100" width="40" height="40" fill="white" stroke="black" />
-                    <rect x="50" y="100" width="40" height="40" fill="white" stroke="black" />
-                    <rect x="100" y="100" width="40" height="40" fill="white" stroke="black" />
-                    <text x="20" y="125" text-anchor="middle" font-size="16">1</text>
-                    <text x="70" y="125" text-anchor="middle" font-size="16">2</text>
-                    <text x="120" y="125" text-anchor="middle" font-size="16">1</text>
+                <!-- Row 2 -->
+                <rect x="0" y="100" width="40" height="40" fill="white" stroke="black" />
+                <rect x="50" y="100" width="40" height="40" fill="white" stroke="black" />
+                <rect x="100" y="100" width="40" height="40" fill="white" stroke="black" />
+                <text x="20" y="125" text-anchor="middle" font-size="16">1</text>
+                <text x="70" y="125" text-anchor="middle" font-size="16">2</text>
+                <text x="120" y="125" text-anchor="middle" font-size="16">1</text>
 
-                    <!-- Row 3 -->
-                    <rect x="0" y="150" width="40" height="40" fill="white" stroke="black" />
-                    <rect x="50" y="150" width="40" height="40" fill="white" stroke="black" />
-                    <rect x="100" y="150" width="40" height="40" fill="white" stroke="black" />
-                    <rect x="150" y="150" width="40" height="40" fill="white" stroke="black" />
-                    <text x="20" y="175" text-anchor="middle" font-size="16">1</text>
-                    <text x="70" y="175" text-anchor="middle" font-size="16">3</text>
-                    <text x="120" y="175" text-anchor="middle" font-size="16">3</text>
-                    <text x="170" y="175" text-anchor="middle" font-size="16">1</text>
+                <!-- Row 3 -->
+                <rect x="0" y="150" width="40" height="40" fill="white" stroke="black" />
+                <rect x="50" y="150" width="40" height="40" fill="white" stroke="black" />
+                <rect x="100" y="150" width="40" height="40" fill="white" stroke="black" />
+                <rect x="150" y="150" width="40" height="40" fill="white" stroke="black" />
+                <text x="20" y="175" text-anchor="middle" font-size="16">1</text>
+                <text x="70" y="175" text-anchor="middle" font-size="16">3</text>
+                <text x="120" y="175" text-anchor="middle" font-size="16">3</text>
+                <text x="170" y="175" text-anchor="middle" font-size="16">1</text>
 
-                    <!-- Row 4 -->
-                    <rect x="0" y="200" width="40" height="40" fill="white" stroke="black" />
-                    <rect x="50" y="200" width="40" height="40" fill="white" stroke="black" />
-                    <rect x="100" y="200" width="40" height="40" fill="white" stroke="black" />
-                    <rect x="150" y="200" width="40" height="40" fill="white" stroke="black" />
-                    <rect x="200" y="200" width="40" height="40" fill="white" stroke="black" />
-                    <text x="20" y="225" text-anchor="middle" font-size="16">1</text>
-                    <text x="70" y="225" text-anchor="middle" font-size="16">4</text>
-                    <text x="120" y="225" text-anchor="middle" font-size="16">6</text>
-                    <text x="170" y="225" text-anchor="middle" font-size="16">4</text>
-                    <text x="220" y="225" text-anchor="middle" font-size="16">1</text>
+                <!-- Row 4 -->
+                <rect x="0" y="200" width="40" height="40" fill="white" stroke="black" />
+                <rect x="50" y="200" width="40" height="40" fill="white" stroke="black" />
+                <rect x="100" y="200" width="40" height="40" fill="white" stroke="black" />
+                <rect x="150" y="200" width="40" height="40" fill="white" stroke="black" />
+                <rect x="200" y="200" width="40" height="40" fill="white" stroke="black" />
+                <text x="20" y="225" text-anchor="middle" font-size="16">1</text>
+                <text x="70" y="225" text-anchor="middle" font-size="16">4</text>
+                <text x="120" y="225" text-anchor="middle" font-size="16">6</text>
+                <text x="170" y="225" text-anchor="middle" font-size="16">4</text>
+                <text x="220" y="225" text-anchor="middle" font-size="16">1</text>
 
-                    <!-- Row 5 -->
-                    <rect x="0" y="250" width="40" height="40" fill="white" stroke="black" />
-                    <rect x="50" y="250" width="40" height="40" fill="white" stroke="black" />
-                    <rect x="100" y="250" width="40" height="40" fill="white" stroke="black" />
-                    <rect x="150" y="250" width="40" height="40" fill="white" stroke="black" />
-                    <rect x="200" y="250" width="40" height="40" fill="white" stroke="black" />
-                    <rect x="250" y="250" width="40" height="40" fill="white" stroke="black" />
-                    <text x="20" y="275" text-anchor="middle" font-size="16">1</text>
-                    <text x="70" y="275" text-anchor="middle" font-size="16">5</text>
-                    <text x="120" y="275" text-anchor="middle" font-size="16">10</text>
-                    <text x="170" y="275" text-anchor="middle" font-size="16">10</text>
-                    <text x="220" y="275" text-anchor="middle" font-size="16">5</text>
-                    <text x="270" y="275" text-anchor="middle" font-size="16">1</text>
+                <!-- Row 5 -->
+                <rect x="0" y="250" width="40" height="40" fill="white" stroke="black" />
+                <rect x="50" y="250" width="40" height="40" fill="white" stroke="black" />
+                <rect x="100" y="250" width="40" height="40" fill="white" stroke="black" />
+                <rect x="150" y="250" width="40" height="40" fill="white" stroke="black" />
+                <rect x="200" y="250" width="40" height="40" fill="white" stroke="black" />
+                <rect x="250" y="250" width="40" height="40" fill="white" stroke="black" />
+                <text x="20" y="275" text-anchor="middle" font-size="16">1</text>
+                <text x="70" y="275" text-anchor="middle" font-size="16">5</text>
+                <text x="120" y="275" text-anchor="middle" font-size="16">10</text>
+                <text x="170" y="275" text-anchor="middle" font-size="16">10</text>
+                <text x="220" y="275" text-anchor="middle" font-size="16">5</text>
+                <text x="270" y="275" text-anchor="middle" font-size="16">1</text>
 
-                    <!-- Row 6 -->
-                    <rect x="0" y="300" width="40" height="40" fill="white" stroke="black" />
-                    <rect x="50" y="300" width="40" height="40" fill="white" stroke="black" />
-                    <rect x="100" y="300" width="40" height="40" fill="white" stroke="black" />
-                    <rect x="150" y="300" width="40" height="40" fill="white" stroke="black" />
-                    <rect x="200" y="300" width="40" height="40" fill="white" stroke="black" />
-                    <rect x="250" y="300" width="40" height="40" fill="white" stroke="black" />
-                    <rect x="300" y="300" width="40" height="40" fill="white" stroke="black" />
-                    <text x="20" y="325" text-anchor="middle" font-size="16">1</text>
-                    <text x="70" y="325" text-anchor="middle" font-size="16">6</text>
-                    <text x="120" y="325" text-anchor="middle" font-size="16">15</text>
-                    <text x="170" y="325" text-anchor="middle" font-size="16">20</text>
-                    <text x="220" y="325" text-anchor="middle" font-size="16">15</text>
-                    <text x="270" y="325" text-anchor="middle" font-size="16">6</text>
-                    <text x="320" y="325" text-anchor="middle" font-size="16">1</text>
-                    <!-- Row 7 -->
-                    <rect x="0" y="350" width="40" height="40" fill="white" stroke="black" />
-                    <text x="20" y="375" text-anchor="middle" font-size="16">1</text>
+                <!-- Row 6 -->
+                <rect x="0" y="300" width="40" height="40" fill="white" stroke="black" />
+                <rect x="50" y="300" width="40" height="40" fill="white" stroke="black" />
+                <rect x="100" y="300" width="40" height="40" fill="white" stroke="black" />
+                <rect x="150" y="300" width="40" height="40" fill="white" stroke="black" />
+                <rect x="200" y="300" width="40" height="40" fill="white" stroke="black" />
+                <rect x="250" y="300" width="40" height="40" fill="white" stroke="black" />
+                <rect x="300" y="300" width="40" height="40" fill="white" stroke="black" />
+                <text x="20" y="325" text-anchor="middle" font-size="16">1</text>
+                <text x="70" y="325" text-anchor="middle" font-size="16">6</text>
+                <text x="120" y="325" text-anchor="middle" font-size="16">15</text>
+                <text x="170" y="325" text-anchor="middle" font-size="16">20</text>
+                <text x="220" y="325" text-anchor="middle" font-size="16">15</text>
+                <text x="270" y="325" text-anchor="middle" font-size="16">6</text>
+                <text x="320" y="325" text-anchor="middle" font-size="16">1</text>
+                <!-- Row 7 -->
+                <rect x="0" y="350" width="40" height="40" fill="white" stroke="black" />
+                <text x="20" y="375" text-anchor="middle" font-size="16">1</text>
 
-                    <g stroke="#e12935" stroke-width="2">
-                        <!-- anti‐diagonals r+c = k for k=1…6 -->
-                        <line x1="0" y1="90" x2="50" y2="40" /> <!-- k=1: passes (row1,col0) -->
-                        <line x1="0" y1="140" x2="100" y2="40" /> <!-- k=2: (row2,col0),(row1,col1) -->
-                        <line x1="0" y1="190" x2="100" y2="90" /> <!-- k=3: (row3,col0),(row2,col1) -->
-                        <line x1="0" y1="240" x2="150" y2="90" /> <!-- k=4: (row4,col0),(row3,col1) -->
-                        <line x1="0" y1="290" x2="150" y2="140" /> <!-- k=5: (row5,col0),(row4,col1) -->
-                        <line x1="0" y1="340" x2="200" y2="140" /> <!-- k=6: (row6,col0),(row5,col1) -->
-                        <line x1="0" y1="390" x2="200" y2="190" /> <!-- k=7: passes (row2,col0),(row1,col1) -->
-                    </g>
+                <g stroke="#e12935" stroke-width="2">
+                    <!-- anti‐diagonals r+c = k for k=1…6 -->
+                    <line x1="0" y1="90" x2="50" y2="40" /> <!-- k=1: passes (row1,col0) -->
+                    <line x1="0" y1="140" x2="100" y2="40" /> <!-- k=2: (row2,col0),(row1,col1) -->
+                    <line x1="0" y1="190" x2="100" y2="90" /> <!-- k=3: (row3,col0),(row2,col1) -->
+                    <line x1="0" y1="240" x2="150" y2="90" /> <!-- k=4: (row4,col0),(row3,col1) -->
+                    <line x1="0" y1="290" x2="150" y2="140" /> <!-- k=5: (row5,col0),(row4,col1) -->
+                    <line x1="0" y1="340" x2="200" y2="140" /> <!-- k=6: (row6,col0),(row5,col1) -->
+                    <line x1="0" y1="390" x2="200" y2="190" /> <!-- k=7: passes (row2,col0),(row1,col1) -->
+                </g>
 
-                </svg>
-            </div>
+            </svg>
+        </div>
+    </div>
+
+    <div class="problem">
+        <h2>Page 2: The Mysterious Sequence</h2>
+        <p>
+            You summed the numbers on the anti-diagonal lines and found the results. They look familiar. You realized that you have seen them in some previous questions.
+        </p>
+        <ol>
+            <li>The 9th problem in the enumeration lecture notes</li>
+            <li>The 10th problem in the enumeration lecture notes</li>
+            <li>The 1st problem in the numbering method lecture notes</li>
+        </ol>
+        <p>
+            Your task: Try to figure out what connection is between these numbers and the previous problems you solved before.
+        </p>
+
+        <div style="display: flex; justify-content: center; margin: 20px 0;">
+            <svg width="420" height="390" xmlns="http://www.w3.org/2000/svg" style="font-family: sans-serif;">
+
+                <!-- 白底正方形和数字 -->
+                <!-- Row 0 -->
+                <rect x="0" y="0" width="40" height="40" fill="white" stroke="black" />
+                <text x="20" y="25" text-anchor="middle" font-size="16">1</text>
+
+                <!-- Row 1 -->
+                <rect x="0" y="50" width="40" height="40" fill="white" stroke="black" />
+                <rect x="50" y="50" width="40" height="40" fill="white" stroke="black" />
+                <text x="20" y="75" text-anchor="middle" font-size="16">1</text>
+                <text x="70" y="75" text-anchor="middle" font-size="16">1</text>
+
+                <!-- Row 2 -->
+                <rect x="0" y="100" width="40" height="40" fill="white" stroke="black" />
+                <rect x="50" y="100" width="40" height="40" fill="white" stroke="black" />
+                <rect x="100" y="100" width="40" height="40" fill="white" stroke="black" />
+                <text x="20" y="125" text-anchor="middle" font-size="16">1</text>
+                <text x="70" y="125" text-anchor="middle" font-size="16">2</text>
+                <text x="120" y="125" text-anchor="middle" font-size="16">1</text>
+
+                <!-- Row 3 -->
+                <rect x="0" y="150" width="40" height="40" fill="white" stroke="black" />
+                <rect x="50" y="150" width="40" height="40" fill="white" stroke="black" />
+                <rect x="100" y="150" width="40" height="40" fill="white" stroke="black" />
+                <rect x="150" y="150" width="40" height="40" fill="white" stroke="black" />
+                <text x="20" y="175" text-anchor="middle" font-size="16">1</text>
+                <text x="70" y="175" text-anchor="middle" font-size="16">3</text>
+                <text x="120" y="175" text-anchor="middle" font-size="16">3</text>
+                <text x="170" y="175" text-anchor="middle" font-size="16">1</text>
+
+                <!-- Row 4 -->
+                <rect x="0" y="200" width="40" height="40" fill="white" stroke="black" />
+                <rect x="50" y="200" width="40" height="40" fill="white" stroke="black" />
+                <rect x="100" y="200" width="40" height="40" fill="white" stroke="black" />
+                <rect x="150" y="200" width="40" height="40" fill="white" stroke="black" />
+                <rect x="200" y="200" width="40" height="40" fill="white" stroke="black" />
+                <text x="20" y="225" text-anchor="middle" font-size="16">1</text>
+                <text x="70" y="225" text-anchor="middle" font-size="16">4</text>
+                <text x="120" y="225" text-anchor="middle" font-size="16">6</text>
+                <text x="170" y="225" text-anchor="middle" font-size="16">4</text>
+                <text x="220" y="225" text-anchor="middle" font-size="16">1</text>
+
+                <!-- Row 5 -->
+                <rect x="0" y="250" width="40" height="40" fill="white" stroke="black" />
+                <rect x="50" y="250" width="40" height="40" fill="white" stroke="black" />
+                <rect x="100" y="250" width="40" height="40" fill="white" stroke="black" />
+                <rect x="150" y="250" width="40" height="40" fill="white" stroke="black" />
+                <rect x="200" y="250" width="40" height="40" fill="white" stroke="black" />
+                <rect x="250" y="250" width="40" height="40" fill="white" stroke="black" />
+                <text x="20" y="275" text-anchor="middle" font-size="16">1</text>
+                <text x="70" y="275" text-anchor="middle" font-size="16">5</text>
+                <text x="120" y="275" text-anchor="middle" font-size="16">10</text>
+                <text x="170" y="275" text-anchor="middle" font-size="16">10</text>
+                <text x="220" y="275" text-anchor="middle" font-size="16">5</text>
+                <text x="270" y="275" text-anchor="middle" font-size="16">1</text>
+
+                <!-- Row 6 -->
+                <rect x="0" y="300" width="40" height="40" fill="white" stroke="black" />
+                <rect x="50" y="300" width="40" height="40" fill="white" stroke="black" />
+                <rect x="100" y="300" width="40" height="40" fill="white" stroke="black" />
+                <rect x="150" y="300" width="40" height="40" fill="white" stroke="black" />
+                <rect x="200" y="300" width="40" height="40" fill="white" stroke="black" />
+                <rect x="250" y="300" width="40" height="40" fill="white" stroke="black" />
+                <rect x="300" y="300" width="40" height="40" fill="white" stroke="black" />
+                <text x="20" y="325" text-anchor="middle" font-size="16">1</text>
+                <text x="70" y="325" text-anchor="middle" font-size="16">6</text>
+                <text x="120" y="325" text-anchor="middle" font-size="16">15</text>
+                <text x="170" y="325" text-anchor="middle" font-size="16">20</text>
+                <text x="220" y="325" text-anchor="middle" font-size="16">15</text>
+                <text x="270" y="325" text-anchor="middle" font-size="16">6</text>
+                <text x="320" y="325" text-anchor="middle" font-size="16">1</text>
+                <!-- Row 7 -->
+                <rect x="0" y="350" width="40" height="40" fill="white" stroke="black" />
+                <text x="20" y="375" text-anchor="middle" font-size="16">1</text>
+                <g stroke="#e12935" stroke-width="2">
+                    <!-- anti‐diagonals r+c = k for k=1…6 -->
+                    <line x1="0" y1="90" x2="50" y2="40" /> <!-- k=1: passes (row1,col0) -->
+                    <line x1="0" y1="140" x2="100" y2="40" /> <!-- k=2: (row2,col0),(row1,col1) -->
+                    <line x1="0" y1="190" x2="100" y2="90" /> <!-- k=3: (row3,col0),(row2,col1) -->
+                    <line x1="0" y1="240" x2="150" y2="90" /> <!-- k=4: (row4,col0),(row3,col1) -->
+                    <line x1="0" y1="290" x2="150" y2="140" /> <!-- k=5: (row5,col0),(row4,col1) -->
+                    <line x1="0" y1="340" x2="200" y2="140" /> <!-- k=6: (row6,col0),(row5,col1) -->
+                    <line x1="0" y1="390" x2="200" y2="190" /> <!-- k=7: passes (row2,col0),(row1,col1) -->
+                </g>
+                <!-- 线段右端点上方写数字之和 -->
+                <text x="60" y="30" text-anchor="middle" font-size="26">1</text>
+                <text x="110" y="30" text-anchor="middle" font-size="26">2</text>
+                <text x="110" y="80" text-anchor="middle" font-size="26">3</text>
+                <text x="160" y="80" text-anchor="middle" font-size="26">5</text>
+                <text x="160" y="130" text-anchor="middle" font-size="26">8</text>
+                <text x="210" y="130" text-anchor="middle" font-size="26">13</text>
+                <text x="210" y="180" text-anchor="middle" font-size="26">21</text>
+
+            </svg>
+        </div>
+    </div>
+
+    <div class="problem">
+        <h2>Page 3: Building the Connection</h2>
+        <div style="display: flex; justify-content: center; margin: 20px 0;">
+            <svg width="420" height="390" xmlns="http://www.w3.org/2000/svg" style="font-family: sans-serif;">
+
+                <!-- 白底正方形和数字 -->
+                <!-- Row 0 -->
+                <rect x="0" y="0" width="40" height="40" fill="white" stroke="black" />
+                <text x="20" y="25" text-anchor="middle" font-size="16">1</text>
+
+                <!-- Row 1 -->
+                <rect x="0" y="50" width="40" height="40" fill="white" stroke="black" />
+                <rect x="50" y="50" width="40" height="40" fill="white" stroke="black" />
+                <text x="20" y="75" text-anchor="middle" font-size="16">1</text>
+                <text x="70" y="75" text-anchor="middle" font-size="16">1</text>
+
+                <!-- Row 2 -->
+                <rect x="0" y="100" width="40" height="40" fill="white" stroke="black" />
+                <rect x="50" y="100" width="40" height="40" fill="white" stroke="black" />
+                <rect x="100" y="100" width="40" height="40" fill="white" stroke="black" />
+                <text x="20" y="125" text-anchor="middle" font-size="16">1</text>
+                <text x="70" y="125" text-anchor="middle" font-size="16">2</text>
+                <text x="120" y="125" text-anchor="middle" font-size="16">1</text>
+
+                <!-- Row 3 -->
+                <rect x="0" y="150" width="40" height="40" fill="white" stroke="black" />
+                <rect x="50" y="150" width="40" height="40" fill="white" stroke="black" />
+                <rect x="100" y="150" width="40" height="40" fill="white" stroke="black" />
+                <rect x="150" y="150" width="40" height="40" fill="white" stroke="black" />
+                <text x="20" y="175" text-anchor="middle" font-size="16">1</text>
+                <text x="70" y="175" text-anchor="middle" font-size="16">3</text>
+                <text x="120" y="175" text-anchor="middle" font-size="16">3</text>
+                <text x="170" y="175" text-anchor="middle" font-size="16">1</text>
+
+                <!-- Row 4 -->
+                <rect x="0" y="200" width="40" height="40" fill="white" stroke="black" />
+                <rect x="50" y="200" width="40" height="40" fill="white" stroke="black" />
+                <rect x="100" y="200" width="40" height="40" fill="white" stroke="black" />
+                <rect x="150" y="200" width="40" height="40" fill="white" stroke="black" />
+                <rect x="200" y="200" width="40" height="40" fill="white" stroke="black" />
+                <text x="20" y="225" text-anchor="middle" font-size="16">1</text>
+                <text x="70" y="225" text-anchor="middle" font-size="16">4</text>
+                <text x="120" y="225" text-anchor="middle" font-size="16">6</text>
+                <text x="170" y="225" text-anchor="middle" font-size="16">4</text>
+                <text x="220" y="225" text-anchor="middle" font-size="16">1</text>
+
+                <!-- Row 5 -->
+                <rect x="0" y="250" width="40" height="40" fill="white" stroke="black" />
+                <rect x="50" y="250" width="40" height="40" fill="white" stroke="black" />
+                <rect x="100" y="250" width="40" height="40" fill="white" stroke="black" />
+                <rect x="150" y="250" width="40" height="40" fill="white" stroke="black" />
+                <rect x="200" y="250" width="40" height="40" fill="white" stroke="black" />
+                <rect x="250" y="250" width="40" height="40" fill="white" stroke="black" />
+                <text x="20" y="275" text-anchor="middle" font-size="16">1</text>
+                <text x="70" y="275" text-anchor="middle" font-size="16">5</text>
+                <text x="120" y="275" text-anchor="middle" font-size="16">10</text>
+                <text x="170" y="275" text-anchor="middle" font-size="16">10</text>
+                <text x="220" y="275" text-anchor="middle" font-size="16">5</text>
+                <text x="270" y="275" text-anchor="middle" font-size="16">1</text>
+
+                <!-- Row 6 -->
+                <rect x="0" y="300" width="40" height="40" fill="white" stroke="black" />
+                <rect x="50" y="300" width="40" height="40" fill="white" stroke="black" />
+                <rect x="100" y="300" width="40" height="40" fill="white" stroke="black" />
+                <rect x="150" y="300" width="40" height="40" fill="white" stroke="black" />
+                <rect x="200" y="300" width="40" height="40" fill="white" stroke="black" />
+                <rect x="250" y="300" width="40" height="40" fill="white" stroke="black" />
+                <rect x="300" y="300" width="40" height="40" fill="white" stroke="black" />
+                <text x="20" y="325" text-anchor="middle" font-size="16">1</text>
+                <text x="70" y="325" text-anchor="middle" font-size="16">6</text>
+                <text x="120" y="325" text-anchor="middle" font-size="16">15</text>
+                <text x="170" y="325" text-anchor="middle" font-size="16">20</text>
+                <text x="220" y="325" text-anchor="middle" font-size="16">15</text>
+                <text x="270" y="325" text-anchor="middle" font-size="16">6</text>
+                <text x="320" y="325" text-anchor="middle" font-size="16">1</text>
+                <!-- Row 7 -->
+                <rect x="0" y="350" width="40" height="40" fill="white" stroke="black" />
+                <text x="20" y="375" text-anchor="middle" font-size="16">1</text>
+
+                <g stroke="#e12935" stroke-width="2">
+                    <!-- anti‐diagonals r+c = k for k=1…6 -->
+                    <line x1="0" y1="90" x2="50" y2="40" /> <!-- k=1: passes (row1,col0) -->
+                    <line x1="0" y1="140" x2="100" y2="40" /> <!-- k=2: (row2,col0),(row1,col1) -->
+                    <line x1="0" y1="190" x2="100" y2="90" /> <!-- k=3: (row3,col0),(row2,col1) -->
+                    <line x1="0" y1="240" x2="150" y2="90" /> <!-- k=4: (row4,col0),(row3,col1) -->
+
+                    <line x1="0" y1="340" x2="200" y2="140" /> <!-- k=6: (row6,col0),(row5,col1) -->
+                    <line x1="0" y1="390" x2="200" y2="190" /> <!-- k=7: passes (row2,col0),(row1,col1) -->
+                </g>
+                <g stroke="#0CAADC" stroke-width="2">
+                    <line x1="0" y1="290" x2="150" y2="140" /> <!-- k=5: (row5,col0),(row4,col1) -->
+                </g>
+                <!-- 线段右端点上方写数字之和 -->
+                <text x="60" y="30" text-anchor="middle" font-size="26">1</text>
+                <text x="110" y="30" text-anchor="middle" font-size="26">2</text>
+                <text x="110" y="80" text-anchor="middle" font-size="26">3</text>
+                <text x="160" y="80" text-anchor="middle" font-size="26">5</text>
+                <text x="160" y="130" text-anchor="middle" font-size="26">8</text>
+                <text x="210" y="130" text-anchor="middle" font-size="26">13</text>
+                <text x="210" y="180" text-anchor="middle" font-size="26">21</text>
+
+            </svg>
         </div>
 
-        <div class="problem">
-            <h2>Page 2: The Mysterious Sequence</h2>
-            <p>
-                Sum the numbers on the anti-diagonal lines in Pascal's triangle. Do they look familiar? You have seen
-                the sequence in previous lessons.
-            </p>
-            <ol>
-                <li>The 9th problem in the enumeration lecture notes</li>
-                <li>The 10th problem in the enumeration lecture notes</li>
-                <li>The 1st problem in the numbering method lecture notes</li>
-            </ol>
-            <div style="display: flex; justify-content: center; margin: 20px 0;">
-                <svg width="420" height="390" xmlns="http://www.w3.org/2000/svg" style="font-family: sans-serif;">
+        <p>
+            Take the first question in the enumeration lecture notes as an example. If you can only take 1 step or 2
+            steps, the total number of ways to reach each level is as follows.
+        </p>
+        <div style="text-align: center;">
+            <svg width="400" height="200" xmlns="http://www.w3.org/2000/svg">
+                <!-- 楼梯基础线 -->
+                <line x1="50" y1="150" x2="350" y2="150" stroke="black" stroke-width="2" />
+                <line x1="50" y1="150" x2="50" y2="50" stroke="black" stroke-width="2" />
 
-                    <!-- 白底正方形和数字 -->
-                    <!-- Row 0 -->
-                    <rect x="0" y="0" width="40" height="40" fill="white" stroke="black" />
-                    <text x="20" y="25" text-anchor="middle" font-size="16">1</text>
+                <!-- 楼梯台阶 -->
+                <line x1="50" y1="150" x2="100" y2="150" stroke="black" stroke-width="2" />
+                <line x1="100" y1="150" x2="100" y2="130" stroke="black" stroke-width="2" />
+                <line x1="100" y1="130" x2="150" y2="130" stroke="black" stroke-width="2" />
+                <line x1="150" y1="130" x2="150" y2="110" stroke="black" stroke-width="2" />
+                <line x1="150" y1="110" x2="200" y2="110" stroke="black" stroke-width="2" />
+                <line x1="200" y1="110" x2="200" y2="90" stroke="black" stroke-width="2" />
+                <line x1="200" y1="90" x2="250" y2="90" stroke="black" stroke-width="2" />
+                <line x1="250" y1="90" x2="250" y2="70" stroke="black" stroke-width="2" />
+                <line x1="250" y1="70" x2="300" y2="70" stroke="black" stroke-width="2" />
+                <line x1="300" y1="70" x2="300" y2="50" stroke="black" stroke-width="2" />
+                <line x1="300" y1="50" x2="350" y2="50" stroke="black" stroke-width="2" />
 
-                    <!-- Row 1 -->
-                    <rect x="0" y="50" width="40" height="40" fill="white" stroke="black" />
-                    <rect x="50" y="50" width="40" height="40" fill="white" stroke="black" />
-                    <text x="20" y="75" text-anchor="middle" font-size="16">1</text>
-                    <text x="70" y="75" text-anchor="middle" font-size="16">1</text>
+                <!-- 标记各阶 -->
+                <text x="65" y="145" font-size="16">1</text>
+                <text x="115" y="125" font-size="16">1</text>
+                <text x="165" y="105" font-size="16">2</text>
+                <text x="215" y="85" font-size="16">3</text>
+                <text x="265" y="65" font-size="16">5</text>
+                <text x="315" y="45" font-size="16">8</text>
+            </svg>
+        </div>
+        <p>
+            Let's take \(8\) as an example. In Pascal's triangle, the three numbers that pass from the lower left
+            corner to the upper right corner are \(1, 4, 3\). They have combinatorics meanings in Pascal's triangle.
+        </p>
+        <p>
+            Your task: Establish a quantitative relationship between the numbers in the triangle and the numbers in the staircase problem.
+        </p>
+    </div>
+    <div class="problem">
+        <h2>Page 4: The Secret Revealed</h2>
+        <div style="display: flex; justify-content: center; margin: 20px 0;">
+            <svg width="420" height="390" xmlns="http://www.w3.org/2000/svg" style="font-family: sans-serif;">
 
-                    <!-- Row 2 -->
-                    <rect x="0" y="100" width="40" height="40" fill="white" stroke="black" />
-                    <rect x="50" y="100" width="40" height="40" fill="white" stroke="black" />
-                    <rect x="100" y="100" width="40" height="40" fill="white" stroke="black" />
-                    <text x="20" y="125" text-anchor="middle" font-size="16">1</text>
-                    <text x="70" y="125" text-anchor="middle" font-size="16">2</text>
-                    <text x="120" y="125" text-anchor="middle" font-size="16">1</text>
+                <!-- 白底正方形和数字 -->
+                <!-- Row 0 -->
+                <rect x="0" y="0" width="40" height="40" fill="white" stroke="black" />
+                <text x="20" y="25" text-anchor="middle" font-size="16">1</text>
 
-                    <!-- Row 3 -->
-                    <rect x="0" y="150" width="40" height="40" fill="white" stroke="black" />
-                    <rect x="50" y="150" width="40" height="40" fill="white" stroke="black" />
-                    <rect x="100" y="150" width="40" height="40" fill="white" stroke="black" />
-                    <rect x="150" y="150" width="40" height="40" fill="white" stroke="black" />
-                    <text x="20" y="175" text-anchor="middle" font-size="16">1</text>
-                    <text x="70" y="175" text-anchor="middle" font-size="16">3</text>
-                    <text x="120" y="175" text-anchor="middle" font-size="16">3</text>
-                    <text x="170" y="175" text-anchor="middle" font-size="16">1</text>
+                <!-- Row 1 -->
+                <rect x="0" y="50" width="40" height="40" fill="white" stroke="black" />
+                <rect x="50" y="50" width="40" height="40" fill="white" stroke="black" />
+                <text x="20" y="75" text-anchor="middle" font-size="16">1</text>
+                <text x="70" y="75" text-anchor="middle" font-size="16">1</text>
 
-                    <!-- Row 4 -->
-                    <rect x="0" y="200" width="40" height="40" fill="white" stroke="black" />
-                    <rect x="50" y="200" width="40" height="40" fill="white" stroke="black" />
-                    <rect x="100" y="200" width="40" height="40" fill="white" stroke="black" />
-                    <rect x="150" y="200" width="40" height="40" fill="white" stroke="black" />
-                    <rect x="200" y="200" width="40" height="40" fill="white" stroke="black" />
-                    <text x="20" y="225" text-anchor="middle" font-size="16">1</text>
-                    <text x="70" y="225" text-anchor="middle" font-size="16">4</text>
-                    <text x="120" y="225" text-anchor="middle" font-size="16">6</text>
-                    <text x="170" y="225" text-anchor="middle" font-size="16">4</text>
-                    <text x="220" y="225" text-anchor="middle" font-size="16">1</text>
+                <!-- Row 2 -->
+                <rect x="0" y="100" width="40" height="40" fill="white" stroke="black" />
+                <rect x="50" y="100" width="40" height="40" fill="white" stroke="black" />
+                <rect x="100" y="100" width="40" height="40" fill="white" stroke="black" />
+                <text x="20" y="125" text-anchor="middle" font-size="16">1</text>
+                <text x="70" y="125" text-anchor="middle" font-size="16">2</text>
+                <text x="120" y="125" text-anchor="middle" font-size="16">1</text>
 
-                    <!-- Row 5 -->
-                    <rect x="0" y="250" width="40" height="40" fill="white" stroke="black" />
-                    <rect x="50" y="250" width="40" height="40" fill="white" stroke="black" />
-                    <rect x="100" y="250" width="40" height="40" fill="white" stroke="black" />
-                    <rect x="150" y="250" width="40" height="40" fill="white" stroke="black" />
-                    <rect x="200" y="250" width="40" height="40" fill="white" stroke="black" />
-                    <rect x="250" y="250" width="40" height="40" fill="white" stroke="black" />
-                    <text x="20" y="275" text-anchor="middle" font-size="16">1</text>
-                    <text x="70" y="275" text-anchor="middle" font-size="16">5</text>
-                    <text x="120" y="275" text-anchor="middle" font-size="16">10</text>
-                    <text x="170" y="275" text-anchor="middle" font-size="16">10</text>
-                    <text x="220" y="275" text-anchor="middle" font-size="16">5</text>
-                    <text x="270" y="275" text-anchor="middle" font-size="16">1</text>
+                <!-- Row 3 -->
+                <rect x="0" y="150" width="40" height="40" fill="white" stroke="black" />
+                <rect x="50" y="150" width="40" height="40" fill="white" stroke="black" />
+                <rect x="100" y="150" width="40" height="40" fill="white" stroke="black" />
+                <rect x="150" y="150" width="40" height="40" fill="white" stroke="black" />
+                <text x="20" y="175" text-anchor="middle" font-size="16">1</text>
+                <text x="70" y="175" text-anchor="middle" font-size="16">3</text>
+                <text x="120" y="175" text-anchor="middle" font-size="16">3</text>
+                <text x="170" y="175" text-anchor="middle" font-size="16">1</text>
 
-                    <!-- Row 6 -->
-                    <rect x="0" y="300" width="40" height="40" fill="white" stroke="black" />
-                    <rect x="50" y="300" width="40" height="40" fill="white" stroke="black" />
-                    <rect x="100" y="300" width="40" height="40" fill="white" stroke="black" />
-                    <rect x="150" y="300" width="40" height="40" fill="white" stroke="black" />
-                    <rect x="200" y="300" width="40" height="40" fill="white" stroke="black" />
-                    <rect x="250" y="300" width="40" height="40" fill="white" stroke="black" />
-                    <rect x="300" y="300" width="40" height="40" fill="white" stroke="black" />
-                    <text x="20" y="325" text-anchor="middle" font-size="16">1</text>
-                    <text x="70" y="325" text-anchor="middle" font-size="16">6</text>
-                    <text x="120" y="325" text-anchor="middle" font-size="16">15</text>
-                    <text x="170" y="325" text-anchor="middle" font-size="16">20</text>
-                    <text x="220" y="325" text-anchor="middle" font-size="16">15</text>
-                    <text x="270" y="325" text-anchor="middle" font-size="16">6</text>
-                    <text x="320" y="325" text-anchor="middle" font-size="16">1</text>
-                    <!-- Row 7 -->
-                    <rect x="0" y="350" width="40" height="40" fill="white" stroke="black" />
-                    <text x="20" y="375" text-anchor="middle" font-size="16">1</text>
-                    <g stroke="#e12935" stroke-width="2">
-                        <!-- anti‐diagonals r+c = k for k=1…6 -->
-                        <line x1="0" y1="90" x2="50" y2="40" /> <!-- k=1: passes (row1,col0) -->
-                        <line x1="0" y1="140" x2="100" y2="40" /> <!-- k=2: (row2,col0),(row1,col1) -->
-                        <line x1="0" y1="190" x2="100" y2="90" /> <!-- k=3: (row3,col0),(row2,col1) -->
-                        <line x1="0" y1="240" x2="150" y2="90" /> <!-- k=4: (row4,col0),(row3,col1) -->
-                        <line x1="0" y1="290" x2="150" y2="140" /> <!-- k=5: (row5,col0),(row4,col1) -->
-                        <line x1="0" y1="340" x2="200" y2="140" /> <!-- k=6: (row6,col0),(row5,col1) -->
-                        <line x1="0" y1="390" x2="200" y2="190" /> <!-- k=7: passes (row2,col0),(row1,col1) -->
-                    </g>
-                    <!-- 线段右端点上方写数字之和 -->
-                    <text x="60" y="30" text-anchor="middle" font-size="26">1</text>
-                    <text x="110" y="30" text-anchor="middle" font-size="26">2</text>
-                    <text x="110" y="80" text-anchor="middle" font-size="26">3</text>
-                    <text x="160" y="80" text-anchor="middle" font-size="26">5</text>
-                    <text x="160" y="130" text-anchor="middle" font-size="26">8</text>
-                    <text x="210" y="130" text-anchor="middle" font-size="26">13</text>
-                    <text x="210" y="180" text-anchor="middle" font-size="26">21</text>
+                <!-- Row 4 -->
+                <rect x="0" y="200" width="40" height="40" fill="white" stroke="black" />
+                <rect x="50" y="200" width="40" height="40" fill="white" stroke="black" />
+                <rect x="100" y="200" width="40" height="40" fill="white" stroke="black" />
+                <rect x="150" y="200" width="40" height="40" fill="white" stroke="black" />
+                <rect x="200" y="200" width="40" height="40" fill="white" stroke="black" />
+                <text x="20" y="225" text-anchor="middle" font-size="16">1</text>
+                <text x="70" y="225" text-anchor="middle" font-size="16">4</text>
+                <text x="120" y="225" text-anchor="middle" font-size="16">6</text>
+                <text x="170" y="225" text-anchor="middle" font-size="16">4</text>
+                <text x="220" y="225" text-anchor="middle" font-size="16">1</text>
 
-                </svg>
-            </div>
+                <!-- Row 5 -->
+                <rect x="0" y="250" width="40" height="40" fill="white" stroke="black" />
+                <rect x="50" y="250" width="40" height="40" fill="white" stroke="black" />
+                <rect x="100" y="250" width="40" height="40" fill="white" stroke="black" />
+                <rect x="150" y="250" width="40" height="40" fill="white" stroke="black" />
+                <rect x="200" y="250" width="40" height="40" fill="white" stroke="black" />
+                <rect x="250" y="250" width="40" height="40" fill="white" stroke="black" />
+                <text x="20" y="275" text-anchor="middle" font-size="16">1</text>
+                <text x="70" y="275" text-anchor="middle" font-size="16">5</text>
+                <text x="120" y="275" text-anchor="middle" font-size="16">10</text>
+                <text x="170" y="275" text-anchor="middle" font-size="16">10</text>
+                <text x="220" y="275" text-anchor="middle" font-size="16">5</text>
+                <text x="270" y="275" text-anchor="middle" font-size="16">1</text>
+
+                <!-- Row 6 -->
+                <rect x="0" y="300" width="40" height="40" fill="white" stroke="black" />
+                <rect x="50" y="300" width="40" height="40" fill="white" stroke="black" />
+                <rect x="100" y="300" width="40" height="40" fill="white" stroke="black" />
+                <rect x="150" y="300" width="40" height="40" fill="white" stroke="black" />
+                <rect x="200" y="300" width="40" height="40" fill="white" stroke="black" />
+                <rect x="250" y="300" width="40" height="40" fill="white" stroke="black" />
+                <rect x="300" y="300" width="40" height="40" fill="white" stroke="black" />
+                <text x="20" y="325" text-anchor="middle" font-size="16">1</text>
+                <text x="70" y="325" text-anchor="middle" font-size="16">6</text>
+                <text x="120" y="325" text-anchor="middle" font-size="16">15</text>
+                <text x="170" y="325" text-anchor="middle" font-size="16">20</text>
+                <text x="220" y="325" text-anchor="middle" font-size="16">15</text>
+                <text x="270" y="325" text-anchor="middle" font-size="16">6</text>
+                <text x="320" y="325" text-anchor="middle" font-size="16">1</text>
+                <!-- Row 7 -->
+                <rect x="0" y="350" width="40" height="40" fill="white" stroke="black" />
+                <text x="20" y="375" text-anchor="middle" font-size="16">1</text>
+
+                <g stroke="#e12935" stroke-width="2">
+                    <!-- anti‐diagonals r+c = k for k=1…6 -->
+                    <line x1="0" y1="90" x2="50" y2="40" /> <!-- k=1: passes (row1,col0) -->
+                    <line x1="0" y1="140" x2="100" y2="40" /> <!-- k=2: (row2,col0),(row1,col1) -->
+                    <line x1="0" y1="190" x2="100" y2="90" /> <!-- k=3: (row3,col0),(row2,col1) -->
+                    <line x1="0" y1="240" x2="150" y2="90" /> <!-- k=4: (row4,col0),(row3,col1) -->
+
+                    <line x1="0" y1="340" x2="200" y2="140" /> <!-- k=6: (row6,col0),(row5,col1) -->
+                    <line x1="0" y1="390" x2="200" y2="190" /> <!-- k=7: passes (row2,col0),(row1,col1) -->
+                </g>
+                <g stroke="#0CAADC" stroke-width="2">
+                    <line x1="0" y1="290" x2="150" y2="140" /> <!-- k=5: (row5,col0),(row4,col1) -->
+                </g>
+                <!-- 线段右端点上方写数字之和 -->
+                <text x="60" y="30" text-anchor="middle" font-size="26">1</text>
+                <text x="110" y="30" text-anchor="middle" font-size="26">2</text>
+                <text x="110" y="80" text-anchor="middle" font-size="26">3</text>
+                <text x="160" y="80" text-anchor="middle" font-size="26">5</text>
+                <text x="160" y="130" text-anchor="middle" font-size="26">8</text>
+                <text x="210" y="130" text-anchor="middle" font-size="26">13</text>
+                <text x="210" y="180" text-anchor="middle" font-size="26">21</text>
+
+            </svg>
         </div>
 
-        <div class="problem">
-            <h2>Page 3: Building the Connection</h2>
-            <div style="display: flex; justify-content: center; margin: 20px 0;">
-                <svg width="420" height="390" xmlns="http://www.w3.org/2000/svg" style="font-family: sans-serif;">
 
-                    <!-- 白底正方形和数字 -->
-                    <!-- Row 0 -->
-                    <rect x="0" y="0" width="40" height="40" fill="white" stroke="black" />
-                    <text x="20" y="25" text-anchor="middle" font-size="16">1</text>
+        <p>
+            Take the first question in the enumeration lecture notes as an example. If you can only take 1 step or 2
+            steps, the total number of ways to reach each level is as follows.
+        </p>
+        <div style="text-align: center;">
+            <svg width="400" height="200" xmlns="http://www.w3.org/2000/svg">
+                <!-- 楼梯基础线 -->
+                <line x1="50" y1="150" x2="350" y2="150" stroke="black" stroke-width="2" />
+                <line x1="50" y1="150" x2="50" y2="50" stroke="black" stroke-width="2" />
 
-                    <!-- Row 1 -->
-                    <rect x="0" y="50" width="40" height="40" fill="white" stroke="black" />
-                    <rect x="50" y="50" width="40" height="40" fill="white" stroke="black" />
-                    <text x="20" y="75" text-anchor="middle" font-size="16">1</text>
-                    <text x="70" y="75" text-anchor="middle" font-size="16">1</text>
+                <!-- 楼梯台阶 -->
+                <line x1="50" y1="150" x2="100" y2="150" stroke="black" stroke-width="2" />
+                <line x1="100" y1="150" x2="100" y2="130" stroke="black" stroke-width="2" />
+                <line x1="100" y1="130" x2="150" y2="130" stroke="black" stroke-width="2" />
+                <line x1="150" y1="130" x2="150" y2="110" stroke="black" stroke-width="2" />
+                <line x1="150" y1="110" x2="200" y2="110" stroke="black" stroke-width="2" />
+                <line x1="200" y1="110" x2="200" y2="90" stroke="black" stroke-width="2" />
+                <line x1="200" y1="90" x2="250" y2="90" stroke="black" stroke-width="2" />
+                <line x1="250" y1="90" x2="250" y2="70" stroke="black" stroke-width="2" />
+                <line x1="250" y1="70" x2="300" y2="70" stroke="black" stroke-width="2" />
+                <line x1="300" y1="70" x2="300" y2="50" stroke="black" stroke-width="2" />
+                <line x1="300" y1="50" x2="350" y2="50" stroke="black" stroke-width="2" />
 
-                    <!-- Row 2 -->
-                    <rect x="0" y="100" width="40" height="40" fill="white" stroke="black" />
-                    <rect x="50" y="100" width="40" height="40" fill="white" stroke="black" />
-                    <rect x="100" y="100" width="40" height="40" fill="white" stroke="black" />
-                    <text x="20" y="125" text-anchor="middle" font-size="16">1</text>
-                    <text x="70" y="125" text-anchor="middle" font-size="16">2</text>
-                    <text x="120" y="125" text-anchor="middle" font-size="16">1</text>
-
-                    <!-- Row 3 -->
-                    <rect x="0" y="150" width="40" height="40" fill="white" stroke="black" />
-                    <rect x="50" y="150" width="40" height="40" fill="white" stroke="black" />
-                    <rect x="100" y="150" width="40" height="40" fill="white" stroke="black" />
-                    <rect x="150" y="150" width="40" height="40" fill="white" stroke="black" />
-                    <text x="20" y="175" text-anchor="middle" font-size="16">1</text>
-                    <text x="70" y="175" text-anchor="middle" font-size="16">3</text>
-                    <text x="120" y="175" text-anchor="middle" font-size="16">3</text>
-                    <text x="170" y="175" text-anchor="middle" font-size="16">1</text>
-
-                    <!-- Row 4 -->
-                    <rect x="0" y="200" width="40" height="40" fill="white" stroke="black" />
-                    <rect x="50" y="200" width="40" height="40" fill="white" stroke="black" />
-                    <rect x="100" y="200" width="40" height="40" fill="white" stroke="black" />
-                    <rect x="150" y="200" width="40" height="40" fill="white" stroke="black" />
-                    <rect x="200" y="200" width="40" height="40" fill="white" stroke="black" />
-                    <text x="20" y="225" text-anchor="middle" font-size="16">1</text>
-                    <text x="70" y="225" text-anchor="middle" font-size="16">4</text>
-                    <text x="120" y="225" text-anchor="middle" font-size="16">6</text>
-                    <text x="170" y="225" text-anchor="middle" font-size="16">4</text>
-                    <text x="220" y="225" text-anchor="middle" font-size="16">1</text>
-
-                    <!-- Row 5 -->
-                    <rect x="0" y="250" width="40" height="40" fill="white" stroke="black" />
-                    <rect x="50" y="250" width="40" height="40" fill="white" stroke="black" />
-                    <rect x="100" y="250" width="40" height="40" fill="white" stroke="black" />
-                    <rect x="150" y="250" width="40" height="40" fill="white" stroke="black" />
-                    <rect x="200" y="250" width="40" height="40" fill="white" stroke="black" />
-                    <rect x="250" y="250" width="40" height="40" fill="white" stroke="black" />
-                    <text x="20" y="275" text-anchor="middle" font-size="16">1</text>
-                    <text x="70" y="275" text-anchor="middle" font-size="16">5</text>
-                    <text x="120" y="275" text-anchor="middle" font-size="16">10</text>
-                    <text x="170" y="275" text-anchor="middle" font-size="16">10</text>
-                    <text x="220" y="275" text-anchor="middle" font-size="16">5</text>
-                    <text x="270" y="275" text-anchor="middle" font-size="16">1</text>
-
-                    <!-- Row 6 -->
-                    <rect x="0" y="300" width="40" height="40" fill="white" stroke="black" />
-                    <rect x="50" y="300" width="40" height="40" fill="white" stroke="black" />
-                    <rect x="100" y="300" width="40" height="40" fill="white" stroke="black" />
-                    <rect x="150" y="300" width="40" height="40" fill="white" stroke="black" />
-                    <rect x="200" y="300" width="40" height="40" fill="white" stroke="black" />
-                    <rect x="250" y="300" width="40" height="40" fill="white" stroke="black" />
-                    <rect x="300" y="300" width="40" height="40" fill="white" stroke="black" />
-                    <text x="20" y="325" text-anchor="middle" font-size="16">1</text>
-                    <text x="70" y="325" text-anchor="middle" font-size="16">6</text>
-                    <text x="120" y="325" text-anchor="middle" font-size="16">15</text>
-                    <text x="170" y="325" text-anchor="middle" font-size="16">20</text>
-                    <text x="220" y="325" text-anchor="middle" font-size="16">15</text>
-                    <text x="270" y="325" text-anchor="middle" font-size="16">6</text>
-                    <text x="320" y="325" text-anchor="middle" font-size="16">1</text>
-                    <!-- Row 7 -->
-                    <rect x="0" y="350" width="40" height="40" fill="white" stroke="black" />
-                    <text x="20" y="375" text-anchor="middle" font-size="16">1</text>
-
-                    <g stroke="#e12935" stroke-width="2">
-                        <!-- anti‐diagonals r+c = k for k=1…6 -->
-                        <line x1="0" y1="90" x2="50" y2="40" /> <!-- k=1: passes (row1,col0) -->
-                        <line x1="0" y1="140" x2="100" y2="40" /> <!-- k=2: (row2,col0),(row1,col1) -->
-                        <line x1="0" y1="190" x2="100" y2="90" /> <!-- k=3: (row3,col0),(row2,col1) -->
-                        <line x1="0" y1="240" x2="150" y2="90" /> <!-- k=4: (row4,col0),(row3,col1) -->
-
-                        <line x1="0" y1="340" x2="200" y2="140" /> <!-- k=6: (row6,col0),(row5,col1) -->
-                        <line x1="0" y1="390" x2="200" y2="190" /> <!-- k=7: passes (row2,col0),(row1,col1) -->
-                    </g>
-                    <g stroke="#0CAADC" stroke-width="2">
-                        <line x1="0" y1="290" x2="150" y2="140" /> <!-- k=5: (row5,col0),(row4,col1) -->
-                    </g>
-                    <!-- 线段右端点上方写数字之和 -->
-                    <text x="60" y="30" text-anchor="middle" font-size="26">1</text>
-                    <text x="110" y="30" text-anchor="middle" font-size="26">2</text>
-                    <text x="110" y="80" text-anchor="middle" font-size="26">3</text>
-                    <text x="160" y="80" text-anchor="middle" font-size="26">5</text>
-                    <text x="160" y="130" text-anchor="middle" font-size="26">8</text>
-                    <text x="210" y="130" text-anchor="middle" font-size="26">13</text>
-                    <text x="210" y="180" text-anchor="middle" font-size="26">21</text>
-
-                </svg>
-            </div>
-
-            <p>
-                Take the first question in the enumeration lecture notes as an example. If you can only take 1 step or 2
-                steps, the total number of ways to reach each level is as follows.
-            </p>
-            <div style="text-align: center;">
-                <svg width="400" height="200" xmlns="http://www.w3.org/2000/svg">
-                    <!-- 楼梯基础线 -->
-                    <line x1="50" y1="150" x2="350" y2="150" stroke="black" stroke-width="2" />
-                    <line x1="50" y1="150" x2="50" y2="50" stroke="black" stroke-width="2" />
-
-                    <!-- 楼梯台阶 -->
-                    <line x1="50" y1="150" x2="100" y2="150" stroke="black" stroke-width="2" />
-                    <line x1="100" y1="150" x2="100" y2="130" stroke="black" stroke-width="2" />
-                    <line x1="100" y1="130" x2="150" y2="130" stroke="black" stroke-width="2" />
-                    <line x1="150" y1="130" x2="150" y2="110" stroke="black" stroke-width="2" />
-                    <line x1="150" y1="110" x2="200" y2="110" stroke="black" stroke-width="2" />
-                    <line x1="200" y1="110" x2="200" y2="90" stroke="black" stroke-width="2" />
-                    <line x1="200" y1="90" x2="250" y2="90" stroke="black" stroke-width="2" />
-                    <line x1="250" y1="90" x2="250" y2="70" stroke="black" stroke-width="2" />
-                    <line x1="250" y1="70" x2="300" y2="70" stroke="black" stroke-width="2" />
-                    <line x1="300" y1="70" x2="300" y2="50" stroke="black" stroke-width="2" />
-                    <line x1="300" y1="50" x2="350" y2="50" stroke="black" stroke-width="2" />
-
-                    <!-- 标记各阶 -->
-                    <text x="65" y="145" font-size="16">1</text>
-                    <text x="115" y="125" font-size="16">1</text>
-                    <text x="165" y="105" font-size="16">2</text>
-                    <text x="215" y="85" font-size="16">3</text>
-                    <text x="265" y="65" font-size="16">5</text>
-                    <text x="315" y="45" font-size="16">8</text>
-                </svg>
-            </div>
-            <p>
-                Let's take \(8\) as an example. In Pascal's triangle, the three numbers that pass from the lower left
-                corner to the upper right corner are \(1, 4, 3\). What is the combination meaning of these three
-                numbers? Check Pascal's triangle and find all these three combinations.
-            </p>
-            <p>
-                In the grid counting problem we did before, we used combinations to arrange the steps of "moving east"
-                and "moving north". What are the combinations you just found arranging?
-            </p>
+                <!-- 标记各阶 -->
+                <text x="65" y="145" font-size="16">1</text>
+                <text x="115" y="125" font-size="16">1</text>
+                <text x="165" y="105" font-size="16">2</text>
+                <text x="215" y="85" font-size="16">3</text>
+                <text x="265" y="65" font-size="16">5</text>
+                <text x="315" y="45" font-size="16">8</text>
+            </svg>
         </div>
-        <div class="problem">
-            <h2>Page 4: The Secret Revealed</h2>
-            <div style="display: flex; justify-content: center; margin: 20px 0;">
-                <svg width="420" height="390" xmlns="http://www.w3.org/2000/svg" style="font-family: sans-serif;">
-
-                    <!-- 白底正方形和数字 -->
-                    <!-- Row 0 -->
-                    <rect x="0" y="0" width="40" height="40" fill="white" stroke="black" />
-                    <text x="20" y="25" text-anchor="middle" font-size="16">1</text>
-
-                    <!-- Row 1 -->
-                    <rect x="0" y="50" width="40" height="40" fill="white" stroke="black" />
-                    <rect x="50" y="50" width="40" height="40" fill="white" stroke="black" />
-                    <text x="20" y="75" text-anchor="middle" font-size="16">1</text>
-                    <text x="70" y="75" text-anchor="middle" font-size="16">1</text>
-
-                    <!-- Row 2 -->
-                    <rect x="0" y="100" width="40" height="40" fill="white" stroke="black" />
-                    <rect x="50" y="100" width="40" height="40" fill="white" stroke="black" />
-                    <rect x="100" y="100" width="40" height="40" fill="white" stroke="black" />
-                    <text x="20" y="125" text-anchor="middle" font-size="16">1</text>
-                    <text x="70" y="125" text-anchor="middle" font-size="16">2</text>
-                    <text x="120" y="125" text-anchor="middle" font-size="16">1</text>
-
-                    <!-- Row 3 -->
-                    <rect x="0" y="150" width="40" height="40" fill="white" stroke="black" />
-                    <rect x="50" y="150" width="40" height="40" fill="white" stroke="black" />
-                    <rect x="100" y="150" width="40" height="40" fill="white" stroke="black" />
-                    <rect x="150" y="150" width="40" height="40" fill="white" stroke="black" />
-                    <text x="20" y="175" text-anchor="middle" font-size="16">1</text>
-                    <text x="70" y="175" text-anchor="middle" font-size="16">3</text>
-                    <text x="120" y="175" text-anchor="middle" font-size="16">3</text>
-                    <text x="170" y="175" text-anchor="middle" font-size="16">1</text>
-
-                    <!-- Row 4 -->
-                    <rect x="0" y="200" width="40" height="40" fill="white" stroke="black" />
-                    <rect x="50" y="200" width="40" height="40" fill="white" stroke="black" />
-                    <rect x="100" y="200" width="40" height="40" fill="white" stroke="black" />
-                    <rect x="150" y="200" width="40" height="40" fill="white" stroke="black" />
-                    <rect x="200" y="200" width="40" height="40" fill="white" stroke="black" />
-                    <text x="20" y="225" text-anchor="middle" font-size="16">1</text>
-                    <text x="70" y="225" text-anchor="middle" font-size="16">4</text>
-                    <text x="120" y="225" text-anchor="middle" font-size="16">6</text>
-                    <text x="170" y="225" text-anchor="middle" font-size="16">4</text>
-                    <text x="220" y="225" text-anchor="middle" font-size="16">1</text>
-
-                    <!-- Row 5 -->
-                    <rect x="0" y="250" width="40" height="40" fill="white" stroke="black" />
-                    <rect x="50" y="250" width="40" height="40" fill="white" stroke="black" />
-                    <rect x="100" y="250" width="40" height="40" fill="white" stroke="black" />
-                    <rect x="150" y="250" width="40" height="40" fill="white" stroke="black" />
-                    <rect x="200" y="250" width="40" height="40" fill="white" stroke="black" />
-                    <rect x="250" y="250" width="40" height="40" fill="white" stroke="black" />
-                    <text x="20" y="275" text-anchor="middle" font-size="16">1</text>
-                    <text x="70" y="275" text-anchor="middle" font-size="16">5</text>
-                    <text x="120" y="275" text-anchor="middle" font-size="16">10</text>
-                    <text x="170" y="275" text-anchor="middle" font-size="16">10</text>
-                    <text x="220" y="275" text-anchor="middle" font-size="16">5</text>
-                    <text x="270" y="275" text-anchor="middle" font-size="16">1</text>
-
-                    <!-- Row 6 -->
-                    <rect x="0" y="300" width="40" height="40" fill="white" stroke="black" />
-                    <rect x="50" y="300" width="40" height="40" fill="white" stroke="black" />
-                    <rect x="100" y="300" width="40" height="40" fill="white" stroke="black" />
-                    <rect x="150" y="300" width="40" height="40" fill="white" stroke="black" />
-                    <rect x="200" y="300" width="40" height="40" fill="white" stroke="black" />
-                    <rect x="250" y="300" width="40" height="40" fill="white" stroke="black" />
-                    <rect x="300" y="300" width="40" height="40" fill="white" stroke="black" />
-                    <text x="20" y="325" text-anchor="middle" font-size="16">1</text>
-                    <text x="70" y="325" text-anchor="middle" font-size="16">6</text>
-                    <text x="120" y="325" text-anchor="middle" font-size="16">15</text>
-                    <text x="170" y="325" text-anchor="middle" font-size="16">20</text>
-                    <text x="220" y="325" text-anchor="middle" font-size="16">15</text>
-                    <text x="270" y="325" text-anchor="middle" font-size="16">6</text>
-                    <text x="320" y="325" text-anchor="middle" font-size="16">1</text>
-                    <!-- Row 7 -->
-                    <rect x="0" y="350" width="40" height="40" fill="white" stroke="black" />
-                    <text x="20" y="375" text-anchor="middle" font-size="16">1</text>
-
-                    <g stroke="#e12935" stroke-width="2">
-                        <!-- anti‐diagonals r+c = k for k=1…6 -->
-                        <line x1="0" y1="90" x2="50" y2="40" /> <!-- k=1: passes (row1,col0) -->
-                        <line x1="0" y1="140" x2="100" y2="40" /> <!-- k=2: (row2,col0),(row1,col1) -->
-                        <line x1="0" y1="190" x2="100" y2="90" /> <!-- k=3: (row3,col0),(row2,col1) -->
-                        <line x1="0" y1="240" x2="150" y2="90" /> <!-- k=4: (row4,col0),(row3,col1) -->
-
-                        <line x1="0" y1="340" x2="200" y2="140" /> <!-- k=6: (row6,col0),(row5,col1) -->
-                        <line x1="0" y1="390" x2="200" y2="190" /> <!-- k=7: passes (row2,col0),(row1,col1) -->
-                    </g>
-                    <g stroke="#0CAADC" stroke-width="2">
-                        <line x1="0" y1="290" x2="150" y2="140" /> <!-- k=5: (row5,col0),(row4,col1) -->
-                    </g>
-                    <!-- 线段右端点上方写数字之和 -->
-                    <text x="60" y="30" text-anchor="middle" font-size="26">1</text>
-                    <text x="110" y="30" text-anchor="middle" font-size="26">2</text>
-                    <text x="110" y="80" text-anchor="middle" font-size="26">3</text>
-                    <text x="160" y="80" text-anchor="middle" font-size="26">5</text>
-                    <text x="160" y="130" text-anchor="middle" font-size="26">8</text>
-                    <text x="210" y="130" text-anchor="middle" font-size="26">13</text>
-                    <text x="210" y="180" text-anchor="middle" font-size="26">21</text>
-
-                </svg>
-            </div>
-
-
-            <p>
-                Take the first question in the enumeration lecture notes as an example. If you can only take 1 step or 2
-                steps, the total number of ways to reach each level is as follows.
-            </p>
-            <div style="text-align: center;">
-                <svg width="400" height="200" xmlns="http://www.w3.org/2000/svg">
-                    <!-- 楼梯基础线 -->
-                    <line x1="50" y1="150" x2="350" y2="150" stroke="black" stroke-width="2" />
-                    <line x1="50" y1="150" x2="50" y2="50" stroke="black" stroke-width="2" />
-
-                    <!-- 楼梯台阶 -->
-                    <line x1="50" y1="150" x2="100" y2="150" stroke="black" stroke-width="2" />
-                    <line x1="100" y1="150" x2="100" y2="130" stroke="black" stroke-width="2" />
-                    <line x1="100" y1="130" x2="150" y2="130" stroke="black" stroke-width="2" />
-                    <line x1="150" y1="130" x2="150" y2="110" stroke="black" stroke-width="2" />
-                    <line x1="150" y1="110" x2="200" y2="110" stroke="black" stroke-width="2" />
-                    <line x1="200" y1="110" x2="200" y2="90" stroke="black" stroke-width="2" />
-                    <line x1="200" y1="90" x2="250" y2="90" stroke="black" stroke-width="2" />
-                    <line x1="250" y1="90" x2="250" y2="70" stroke="black" stroke-width="2" />
-                    <line x1="250" y1="70" x2="300" y2="70" stroke="black" stroke-width="2" />
-                    <line x1="300" y1="70" x2="300" y2="50" stroke="black" stroke-width="2" />
-                    <line x1="300" y1="50" x2="350" y2="50" stroke="black" stroke-width="2" />
-
-                    <!-- 标记各阶 -->
-                    <text x="65" y="145" font-size="16">1</text>
-                    <text x="115" y="125" font-size="16">1</text>
-                    <text x="165" y="105" font-size="16">2</text>
-                    <text x="215" y="85" font-size="16">3</text>
-                    <text x="265" y="65" font-size="16">5</text>
-                    <text x="315" y="45" font-size="16">8</text>
-                </svg>
-            </div>
-            <p>
-                Take \(8\) as an example. In Pascal's triangle, the three numbers that pass from the lower left corner
-                to the upper right corner are \(1, 4, 3\). They have the following combination meanings:
-            </p>
-            <ol>
-                <li>\(C(5,0)\)</li>
-                <li>\(C(4,1)\)</li>
-                <li>\(C(3,2)\)</li>
-            </ol>
-            <p>
-                In this stair climbing problem, we arrange the positions of the two types of moves: "one move two steps"
-                and "one move one step". For example, \(C(5,0)\) means that in \(5\) moves, there are \(0\) moves of
-                "one move two steps", which means all \(5\) moves are "one move one step". On the other hand, \(C(4,1)\)
-                means that in \(4\) moves, there is \(1\) move of "one move two steps", which means that among these
-                \(4\) moves, there is \(1\) move of "one move two steps", and the remaining \(3\) moves are all "one
-                move one step".
-            </p>
-            <p>
-                Can you draw an enumeration tree for the above two arrangements?
-            </p>
-        </div>
+        <p>
+            Take \(8\) as an example. In Pascal's triangle, the three numbers that pass from the lower left corner
+            to the upper right corner are \(1, 4, 3\). They have the following combination meanings:
+        </p>
+        <ol>
+            <li>\(C(5,0)\)</li>
+            <li>\(C(4,1)\)</li>
+            <li>\(C(3,2)\)</li>
+        </ol>
+        <p>
+            In this stair climbing problem, we arrange the positions of the two types of moves: "one move two steps"
+            and "one move one step". For example, \(C(5,0)\) means that in \(5\) moves, there are \(0\) moves of
+            "one move two steps", which means all \(5\) moves are "one move one step". On the other hand, \(C(4,1)\)
+            means that in \(4\) moves, there is \(1\) move of "one move two steps", which means that among these
+            \(4\) moves, there is \(1\) move of "one move two steps", and the remaining \(3\) moves are all "one
+            move one step".
+        </p>
+        <p>
+            Can you draw an enumeration tree for the above two arrangements?
+        </p>
+    </div>
     </div>
 
 </body>
